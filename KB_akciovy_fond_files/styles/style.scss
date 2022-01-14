@@ -85,20 +85,6 @@ body {
                 color: #fff;
                 font-weight: 500;
               }
-              a[data-toggle="tooltip"] {
-                cursor: default;
-                font-size: 0;
-                text-indent: -9999px;
-                line-height: 0;
-                background: url(../images/otaznik_bili.png) no-repeat;
-                color: transparent;
-                padding: 12px 12px 6px 6px;
-                margin-left: 5px;
-              }
-              tbody a[data-toggle="tooltip"] {
-                filter: brightness(0.6) contrast(3.4) hue-rotate(217deg)
-                  saturate(9.9);
-              }
               thead tr th:first-child,
               tbody tr td:first-child {
                 border-left: none;
@@ -204,7 +190,7 @@ body {
               border-bottom: none;
               &:first-child::before {
                 content: "⌄";
-                opacity: .5;
+                opacity: 0.5;
                 position: absolute;
                 top: 5px;
                 left: 10px;
@@ -223,6 +209,21 @@ body {
           opacity: 0.6;
         }
       }
+    }
+  }
+  table {
+    thead a[data-toggle="tooltip"] {
+      cursor: default;
+      font-size: 0;
+      text-indent: -9999px;
+      line-height: 0;
+      background: url(../images/otaznik_bili.png) no-repeat;
+      color: transparent;
+      padding: 12px 12px 6px 6px;
+      margin-left: 5px;
+    }
+    tbody a[data-toggle="tooltip"] {
+      filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
     }
   }
 }

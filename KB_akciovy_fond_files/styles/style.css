@@ -98,22 +98,6 @@ body .footer-wrapper {
   font-weight: 500;
 }
 
-.KB-fond .container #myTab + .tab-content > .tab-pane .container .table a[data-toggle="tooltip"] {
-  cursor: default;
-  font-size: 0;
-  text-indent: -9999px;
-  line-height: 0;
-  background: url(../images/otaznik_bili.png) no-repeat;
-  color: transparent;
-  padding: 12px 12px 6px 6px;
-  margin-left: 5px;
-}
-
-.KB-fond .container #myTab + .tab-content > .tab-pane .container .table tbody a[data-toggle="tooltip"] {
-  -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
-          filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
-}
-
 .KB-fond .container #myTab + .tab-content > .tab-pane .container .table thead tr th:first-child,
 .KB-fond .container #myTab + .tab-content > .tab-pane .container .table tbody tr td:first-child {
   border-left: none;
@@ -230,7 +214,7 @@ body .footer-wrapper {
 
 .KB-fond .container > .container table.table-last tbody tr td:first-child::before {
   content: "⌄";
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   top: 5px;
   left: 10px;
@@ -246,5 +230,21 @@ body .footer-wrapper {
   border-left: none;
   border-right: none;
   opacity: 0.6;
+}
+
+.KB-fond table thead a[data-toggle="tooltip"] {
+  cursor: default;
+  font-size: 0;
+  text-indent: -9999px;
+  line-height: 0;
+  background: url(../images/otaznik_bili.png) no-repeat;
+  color: transparent;
+  padding: 12px 12px 6px 6px;
+  margin-left: 5px;
+}
+
+.KB-fond table tbody a[data-toggle="tooltip"] {
+  -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
+          filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
 }
 /*# sourceMappingURL=style.css.map */
