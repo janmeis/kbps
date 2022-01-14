@@ -15,23 +15,32 @@ $(() => {
   var options = {
     animationEnabled: true,
     title: {
-      text: 'Struktura majetku',
+      text: 'Struktura majetku ve fondu k poslednímu oceňovacímu cyklu',
+      fontColor: '#974a5a',
+      fontFamily: 'system-ui',
+      fontSize: 30,
+      fontWeight: 'bold',
+      margin: 0
     },
     toolTip: {
       enabled: false,
+    },
+    legend: {
+      itemMaxWidth: 100,
     },
     data: [
       {
         type: 'doughnut',
         innerRadius: '85%',
         showInLegend: true,
-        legendText: '{label}',
+        legendText: '{label} #percent%',
         indexLabel: '#percent%',
-        startAngle: 250,
+        startAngle: 0,
         dataPoints: [
-          { label: 'Akcie', y: 758, color: '#e88e5e' },
-          { label: 'Dluhopisy', y: 95, color: '#514b90' },
-          { label: 'Nástroje peněžního trhu', y: 147, color: '#854b4b' },
+          { label: 'Peněžní trh', y: 1470, color: '#974a5a' },
+          { label: 'Dluhopisy', y: 534, color: '#38699f' },
+          { label: 'Ostatní aktiva', y: 113, color: '#f6a416' },
+          { label: 'Akcie a podílové listy', y: 7883, color: '#41c49d' },
         ],
       },
     ],

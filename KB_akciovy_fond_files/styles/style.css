@@ -118,7 +118,7 @@ body .footer-wrapper {
   border-left: none;
 }
 
-.KB-fond .container #myTab + .tab-content > .tab-pane .container .table:not(.table-transform) tbody {
+.KB-fond .container #myTab + .tab-content > .tab-pane .container .table:not(.table-transform):not(.table-basic-info) tbody {
   border-top: none;
 }
 
@@ -127,7 +127,7 @@ body .footer-wrapper {
 }
 
 @media (max-width: 767px) {
-  .KB-fond .container #myTab + .tab-content > .tab-pane .container .table:not(.table-transform) {
+  .KB-fond .container #myTab + .tab-content > .tab-pane .container .table:not(.table-transform):not(.table-basic-info) {
     display: none;
   }
   .KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-transform {
@@ -144,9 +144,33 @@ body .footer-wrapper {
   }
 }
 
+.KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-basic-info tr td {
+  padding-left: 15px;
+}
+
+.KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-basic-info tr td:first-child {
+  font-weight: 500;
+}
+
+.KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-basic-info tr:last-child td {
+  padding-left: 5px;
+}
+
+.KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-basic-info tr:last-child td p {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-basic-info tr:last-child td p span {
+  font-weight: 500;
+  padding-right: 5px;
+}
+
 .KB-fond .container #myTab + .tab-content > .tab-pane .container #chartContainer {
-  width: 50%;
-  height: 550px;
+  margin-top: 15px;
+  margin-left: -10px;
+  width: 100%;
+  height: 340px;
 }
 
 @media (max-width: 991px) {
