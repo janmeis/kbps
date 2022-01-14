@@ -1,6 +1,6 @@
 $(() => {
   var tabs = $("#myTab a");
-  tabs.click(function (e) {
+  tabs.click((e) => {
     e.preventDefault();
     tabs.each(function () {
       $(this).removeClass("active");
