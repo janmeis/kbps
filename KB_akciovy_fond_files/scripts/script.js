@@ -40,7 +40,7 @@ $(() => {
           { label: 'Peněžní trh', y: 1470, color: '#974a5a' },
           { label: 'Dluhopisy', y: 534, color: '#38699f' },
           { label: 'Ostatní aktiva', y: 113, color: '#f6a416' },
-          { label: 'Akcie a podílové listy', y: 7883, color: '#41c49d' },
+          { label: 'Akcie a podílové listy', y: 7883, color: '#dc4941' },
         ],
       },
     ],
