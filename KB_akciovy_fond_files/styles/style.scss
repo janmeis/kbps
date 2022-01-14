@@ -125,11 +125,18 @@ body {
                 }
               }
               &.table-basic-info {
-                tr {
+                tbody tr {
+                  border-top: none;
+                  &:last-child {
+                    border-bottom: none;
+                  }
                   td {
                     padding-left: 15px;
                     &:first-child {
                       font-weight: 500;
+                    }
+                    &:last-child {
+                      border-right: none;
                     }
                   }
                   &:last-child td {
@@ -146,11 +153,18 @@ body {
                 }
               }
             }
-            #chartContainer {
-              margin-top: 15px;
-              margin-left: -10px;
-              width: 100%;
-              height: 340px;
+            .row {
+              #chartContainer {
+                margin-top: 15px;
+                margin-left: -10px;
+                width: 100%;
+                height: 340px;
+              }
+              .card {
+                margin: 15px 0;
+                font-size: 1.3em;
+                text-align: center;
+              }
             }
           }
         }
@@ -167,6 +181,33 @@ body {
               padding: 0;
             }
           }
+        }
+      }
+    }
+    & > .container {
+      padding: 0;
+      table {
+        thead tr {
+          font-weight: 500;
+          &:first-child th {
+            background: $table-color;
+            color: #fff;
+            text-align: center;
+          }
+        }
+        tbody {
+          border-top: none;
+          tr td:last-child {
+            text-align: right;
+          }
+        }
+        thead tr th:first-child,
+        tbody tr td:first-child {
+          border-left: none;
+        }
+        thead tr th:last-child,
+        tbody tr td:last-child {
+          border-right: none;
         }
       }
     }
