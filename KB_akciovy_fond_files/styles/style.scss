@@ -1,3 +1,10 @@
+@mixin page-wrap {
+  .page-wrap > .container {
+    max-width: 100%;
+  }
+}
+$table-color: #dc4941;
+
 body {
   .page-wrap {
     header,
@@ -14,11 +21,6 @@ body {
   }
 }
 
-@mixin page-wrap {
-  .page-wrap > .container {
-    max-width: 100%;
-  }
-}
 
 @media (min-width: 992px) {
   @include page-wrap();
@@ -49,7 +51,7 @@ body {
     h2,
     h3 {
       font-weight: 500;
-      color: #c03;
+      color: #000000;
     }
     #myTab {
       margin-top: 50px;
@@ -61,7 +63,7 @@ body {
           border-radius: 5px 5px 0 0;
           font-weight: 500;
           color: #495057;
-          background-color: rgb(245, 245, 245);
+          background-color: #f5f5f5;
           border-color: #dee2e6 #dee2e6 #fff;
           &.active {
             background-color: #fff;
@@ -76,14 +78,10 @@ body {
           border: solid 1px #dee2e6;
           .container {
             padding-top: 10px;
-            h3 {
-              font-weight: 500;
-              color: #cc0033;
-            }
             .table {
               cursor: pointer;
               thead tr th {
-                background: linear-gradient(#cc0033, #b30025);
+                background: $table-color;
                 color: #fff;
                 font-weight: 500;
               }
@@ -111,20 +109,20 @@ body {
               &.table-transform {
                 display: none;
               }
-              tbody td:first-child {
-                background: linear-gradient(#cc0033, #b30025);
-                color: #fff;
-                font-weight: 500;
-                a[data-toggle="tooltip"] {
-                  filter: none;
-                }
-              }
               @media (max-width: 767px) {
                 &:not(.table-transform) {
                   display: none;
                 }
                 &.table-transform {
                   display: table;
+                  tbody td:first-child {
+                    background: $table-color;
+                    color: #fff;
+                    font-weight: 500;
+                    a[data-toggle="tooltip"] {
+                      filter: none;
+                    }
+                  }
                 }
               }
             }

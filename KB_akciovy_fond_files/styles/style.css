@@ -51,7 +51,7 @@ body .footer-wrapper {
 .KB-fond .container h2,
 .KB-fond .container h3 {
   font-weight: 500;
-  color: #c03;
+  color: #000000;
 }
 
 .KB-fond .container #myTab {
@@ -65,7 +65,7 @@ body .footer-wrapper {
   border-radius: 5px 5px 0 0;
   font-weight: 500;
   color: #495057;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
@@ -87,18 +87,12 @@ body .footer-wrapper {
   padding-top: 10px;
 }
 
-.KB-fond .container #myTab + .tab-content > .tab-pane .container h3 {
-  font-weight: 500;
-  color: #cc0033;
-}
-
 .KB-fond .container #myTab + .tab-content > .tab-pane .container .table {
   cursor: pointer;
 }
 
 .KB-fond .container #myTab + .tab-content > .tab-pane .container .table thead tr th {
-  background: -webkit-gradient(linear, left top, left bottom, from(#cc0033), to(#b30025));
-  background: linear-gradient(#cc0033, #b30025);
+  background: #dc4941;
   color: #fff;
   font-weight: 500;
 }
@@ -132,24 +126,21 @@ body .footer-wrapper {
   display: none;
 }
 
-.KB-fond .container #myTab + .tab-content > .tab-pane .container .table tbody td:first-child {
-  background: -webkit-gradient(linear, left top, left bottom, from(#cc0033), to(#b30025));
-  background: linear-gradient(#cc0033, #b30025);
-  color: #fff;
-  font-weight: 500;
-}
-
-.KB-fond .container #myTab + .tab-content > .tab-pane .container .table tbody td:first-child a[data-toggle="tooltip"] {
-  -webkit-filter: none;
-          filter: none;
-}
-
 @media (max-width: 767px) {
   .KB-fond .container #myTab + .tab-content > .tab-pane .container .table:not(.table-transform) {
     display: none;
   }
   .KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-transform {
     display: table;
+  }
+  .KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-transform tbody td:first-child {
+    background: #dc4941;
+    color: #fff;
+    font-weight: 500;
+  }
+  .KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-transform tbody td:first-child a[data-toggle="tooltip"] {
+    -webkit-filter: none;
+            filter: none;
   }
 }
 
