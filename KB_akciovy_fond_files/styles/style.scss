@@ -21,7 +21,6 @@ body {
   }
 }
 
-
 @media (min-width: 992px) {
   @include page-wrap();
 }
@@ -125,6 +124,10 @@ body {
                   }
                 }
               }
+            }
+            #chartContainer {
+              width: 50%;
+              height: 550px;
             }
           }
         }

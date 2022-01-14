@@ -144,6 +144,11 @@ body .footer-wrapper {
   }
 }
 
+.KB-fond .container #myTab + .tab-content > .tab-pane .container #chartContainer {
+  width: 50%;
+  height: 550px;
+}
+
 @media (max-width: 991px) {
   .KB-fond .container #myTab {
     display: none;
