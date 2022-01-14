@@ -1,12 +1,15 @@
 body .page-wrap header,
-body .page-wrap > .nav-menu,
-body .footer-wrapper {
+body .page-wrap > .nav-menu {
   display: none;
 }
 
 body .page-wrap .page-container-inner {
   width: 100%;
   background-image: none;
+}
+
+body .footer-wrapper {
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -30,12 +33,12 @@ body .page-wrap .page-container-inner {
   margin-top: 0;
 }
 
-.KB-fond > .navbar-1 > .container > .container .logo {
+.KB-fond > .navbar-1 > .container .logo {
   width: 600px;
 }
 
 @media (max-width: 767px) {
-  .KB-fond > .navbar-1 > .container > .container .logo {
+  .KB-fond > .navbar-1 > .container .logo {
     width: 400px;
   }
 }
@@ -147,6 +150,23 @@ body .page-wrap .page-container-inner {
   }
   .KB-fond .container #myTab + .tab-content > .tab-pane .container .table.table-transform {
     display: table;
+  }
+}
+
+@media (max-width: 991px) {
+  .KB-fond .container #myTab {
+    display: none;
+  }
+  .KB-fond .container #myTab + .tab-content {
+    margin-bottom: 0;
+  }
+  .KB-fond .container #myTab + .tab-content > .tab-pane {
+    display: block;
+    min-height: auto;
+    border: none;
+  }
+  .KB-fond .container #myTab + .tab-content > .tab-pane .container {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,17 @@
-body .page-wrap header,
-body .page-wrap > .nav-menu,
-body .footer-wrapper {
-  display: none;
-}
-
-body .page-wrap .page-container-inner {
-  width: 100%;
-  background-image: none;
+body {
+  .page-wrap {
+    header,
+    & > .nav-menu {
+      display: none;
+    }
+    .page-container-inner {
+      width: 100%;
+      background-image: none;
+    }
+  }
+  .footer-wrapper {
+    display: none;
+  }
 }
 
 @mixin page-wrap {
@@ -29,11 +34,11 @@ body .page-wrap .page-container-inner {
     height: 75px;
     padding-top: 0;
     margin-top: 0;
-    & > .container .logo {
+    .logo {
       width: 600px;
     }
     @media (max-width: 767px) {
-      & > .container .logo {
+      & .logo {
         width: 400px;
       }
     }
@@ -122,6 +127,20 @@ body .page-wrap .page-container-inner {
                   display: table;
                 }
               }
+            }
+          }
+        }
+      }
+      @media (max-width: 991px) {
+        display: none;
+        & + .tab-content {
+          margin-bottom: 0;
+          & > .tab-pane {
+            display: block;
+            min-height: auto;
+            border: none;
+            .container {
+              padding: 0;
             }
           }
         }
